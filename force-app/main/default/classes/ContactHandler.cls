@@ -7,7 +7,6 @@
 */
 public class ContactHandler {
 	public static void checkDuplicateEmail(List<Contact> newContacts, Boolean IsUpdate){
-
         for(Contact newContact:newContacts){
             String newContactEmail = newContact.Email;
             if(newContactEmail == null){
