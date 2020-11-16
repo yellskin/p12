@@ -19,7 +19,7 @@ public class ContactHandler {
                 List<Contact> contactList = Database.query(queryContacts);
                 if(contactList.size() > 0) {
                     for(Contact contact : contactList) {
-                        newContact.addError('Impossible de sauvegarder le contact. Un compte possédant cet Email ('+newContactEmail+') existe déjà.', false);
+                        newContact.addError('Impossible de sauvegarder le contact. Un contact possédant cet Email ('+newContactEmail+') existe déjà.', false);
                     }
                 }
             }
